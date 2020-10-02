@@ -1,0 +1,24 @@
+/*box-slide*/
+.box-slide-content {
+  width: 600px;
+  font-family: $font;
+  margin-left: 400px;
+ 
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+
+    h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    }
+
+    p{
+      font-size: 25px;
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+}
+

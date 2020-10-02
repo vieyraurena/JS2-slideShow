@@ -1,0 +1,24 @@
+
+@import 'config/settings';
+@import 'partial/globales';
+@import 'partial/box-content';
+@import 'partial/link';
+@import 'partial/slide-dot';
+@import 'partial/arrow';
+
+
+
+
+.image-slide {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  z-index: 1;
+  transition: left 4s;
+  -webkit-transition: left 4s;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
