@@ -1,7 +1,7 @@
 //Guardamos las imagenes y su información en constantes
 const images = document.querySelectorAll('.image-slide');
 const infos = document.querySelectorAll('.box-slide-content');
-
+let position = 0;
 //Iteramos para ir agregando la clase que ocultaria los slides
 for(let i = 0; i < images.length; i++){
     images[i].classList.add('js-content-hidden');
@@ -11,7 +11,7 @@ for(let i = 0; i < images.length; i++){
 images[0].classList.remove('js-content-hidden');
 infos[0].classList.remove('js-content-hidden');
 
-let t = 0;
+
 
 function changeImage(){
     
@@ -19,15 +19,13 @@ function changeImage(){
         images[i].classList.add('js-content-hidden');
         infos[i].classList.add('js-content-hidden');
     }
-    if (t < 2){
-        t++;
+    if (position < 2){
+        position++;
     }else{
-        t = 0;
+        position = 0;
     }
     
-    images[t].classList.remove('js-content-hidden');
-    infos[t].classList.remove('js-content-hidden');
-    console.log(t);
-    
+    images[position].classList.remove('js-content-hidden');
+    infos[position].classList.remove('js-content-hidden');
 }
 window.setInterval(changeImage, 3000);
