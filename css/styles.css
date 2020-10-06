@@ -1,3 +1,4 @@
+/*variables*/
 /*globales*/
 * {
   margin: 0;
@@ -13,7 +14,7 @@ body {
 
 .container-slide {
   margin: 0 auto;
-  margin-bottom: 510px;
+  margin-bottom: 475px;
   position: relative; }
 
 .image-slide {
@@ -68,19 +69,19 @@ a {
   display: table; }
 
 .slide-dot {
-  margin-left: 580px;
-  z-index: 5; }
+  margin-left: 580px; }
 
-li {
+button {
   float: left;
-  margin-left: 10px;
-  list-style: none;
+  margin-right: 10px;
+  border-style: none;
   padding: 8px;
   background-color: #fff;
   border-radius: 15px; }
-  li:hover {
+  button:hover {
     background-color: #424242; }
 
+/*arrows*/
 #arrow1 {
   position: absolute;
   top: 200px;
