@@ -13,22 +13,23 @@
       <div class="header">
         <img src="img/logo-cetav.png" alt="logo-cetav" width="300px">
       </div>
-
-      
+     
       <!--Content Slide-->
       <div class="container-slide">
 
         <!--FLECHAS-->
-        <img id="arrow1" src="img/left.png" alt="arrow-left">
-        <img id="arrow2" src="img/right.png" alt="arrow-right">
         <!-- El evento click va ligado al arrow y las imagenes de las flechas se llamaran con CSS-->
-        <!--El activeSlide va estar ligado a una función para que solo se muestre el primero de manera temporal, luego se desplazaria.-->
-        
-        
-        <!--Slide #1-->
-        <!--La clase BOX-SLIDE-HIDDEN es pensada para desactivar el bloque que contiene h1, p, a, y la img con JS-->
+        <!--El comentario de la línea 21 no se hará, ya que se tomó la decisión de llamarla con JS
+        para controlar el cambio hacia adelante o hacia atras-->
+        <div>
+          <a href="#slider-1"><img id="arrow1" src="img/left.png" alt="arrow-left"></a>
+          <a href="#slider-2"><img id="arrow2" src="img/right.png" alt="arrow-right"></a>
+        </div>
 
-        <div class="box-slide-hidden">
+        <!--La clase BOX-SLIDE-HIDDEN es pensada para desactivar el bloque que contiene h1, p, a, y la img
+          con JS-->
+        <!--Slide #1-->
+        <div id="slider-2" class="box-slide-hidden">
           <div class="box-slide-content">
             <h2>Diseño y Desarrollo Web</h2>
             <p>Conocerás los diferentes lenguajes de programación, sistemas de interactividad, navegabilidad y flujos de trabajo asociado convirtiéndote en desarrollador(a) Web Front End.</p>
@@ -39,10 +40,8 @@
           </div>
         </div>
         
-  
-  
         <!--Slide #2-->
-        <div class="box-slide-hidden">
+        <div id="slider-1" class="box-slide-hidden">
           <div class="box-slide-content">
               <h2>Post Producción de Imagen y Sonido</h2>
               <p>Podrás editar imágenes en movimiento, crear efectos visuales  y realizar la postproducción de imagen y sonido, para cine y televisión.</p>
@@ -53,10 +52,8 @@
           </div>
         </div>
         
-  
-  
         <!--Slide #3-->
-        <div class="box-slide-hidden">
+        <div id="slider-1" class="box-slide-hidden">
           <div class="box-slide-content">
               <h2>Animación Digital 3D</h2>
               <p>Adquirirás las competencias en dibujo, diseño de personajes, storyboard, pintura digital, modelado, animación, render para alcanzar un nivel técnico avanzado en Animación Digital 3D.</p>
@@ -67,31 +64,21 @@
           </div>
         </div>        
       </div> 
-
+ 
+      <!--Se hace cambios en slide-dot en ves de manejarlo con "li" se manejará con "button" ya que
+      en terminos de accesibilidad es mejor práctica-->
       <!--slide-dot-->
-    </div>
-    
-    <div class="wrapper">
-      <ul class="slide-dot clearfix ">
-        <!--Esta lista se mostrará activa en conjunto con la posición del slide.-->
-        <!--El evento click va ligado a esta lista-->
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-      </ul>
-      <!--logo parque-->
+      <div class="slide-dot clearfix">
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+
+      <!--footer-->
       <div class="footer">
         <img src="img/logo-parque.png" alt="logo-parquelalibertad">
       </div>  
-     
     </div>
-
-
-
-
-
-
-
 
 </body>
 </html>
