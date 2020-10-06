@@ -102,6 +102,5 @@ button {
   width: 100px; }
 
 /*clases para utilizar con js*/
-/*.box-slide-hidden{
-  display: none;
-}*/
+.js-content-hidden {
+  display: none; }
