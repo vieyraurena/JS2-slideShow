@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +13,7 @@
       <div class="header">
         <img src="img/logo-cetav.png" alt="logo-cetav" width="300px">
       </div>
-
+      
       <!--Content Slide-->
       <div class="container-slide">
         <!--FLECHAS-->
@@ -25,10 +24,9 @@
           <a href="#slider-1"><img id="arrow1" src="img/left.png" alt="arrow-left"></a>
           <a href="#slider-2"><img id="arrow2" src="img/right.png" alt="arrow-right"></a>
         </div>
-        <!--La clase BOX-SLIDE-HIDDEN es pensada para desactivar el bloque que contiene h1, p, a, y la img
-            con JS-->
+
         <!--Slide #1-->
-        <div id="slider-2" class="box-slide-hidden">
+        <div id="slider-2" class="box-slide">
           <div class="box-slide-content">
             <h2>Diseño y Desarrollo Web</h2>
             <p>Conocerás los diferentes lenguajes de programación, sistemas de interactividad, navegabilidad y flujos de
@@ -40,7 +38,7 @@
           </div>
         </div>
         <!--Slide #2-->
-        <div id="slider-1" class="box-slide-hidden">
+        <div id="slider-1" class="box-slide">
           <div class="box-slide-content">
             <h2>Post Producción de Imagen y Sonido</h2>
             <p>Podrás editar imágenes en movimiento, crear efectos visuales y realizar la postproducción de imagen y
@@ -53,35 +51,34 @@
         </div>
 
         <!--Slide #3-->
-        <div id="slider-1" class="box-slide-hidden">
+        <div id="slider-1" class="box-slide">
           <div class="box-slide-content">
             <h2>Animación Digital 3D</h2>
-            <p>Adquirirás las competencias en dibujo, diseño de personajes, storyboard, pintura digital, modelado,
-              animación, render para alcanzar un nivel técnico avanzado en Animación Digital 3D.</p>
+           <p>Adquirirás las competencias en dibujo, diseño de personajes, storyboard, pintura digital, modelado, animación, render para alcanzar un nivel técnico avanzado en Animación Digital 3D.</p>
             <a href="http://www.parquelalibertad.org/cetav/carreras/animacion-digital-3d">Conocer más</a>
           </div>
           <div class="image-slide">
             <img src="img/animacion-digital-3d-cetav.jpg" alt="Animación Digital 3D, carreras CETV." width="1200px">
           </div>
-        </div>
+        </div>   
+      </div>       
+      <div class="slide-dot clearfix">
+        <button onclick="changeImageByDot(0,this)" class="dot dot-active"></button>
+        <button onclick="changeImageByDot(1,this)" class="dot"></button>
+        <button onclick="changeImageByDot(2,this)" class="dot"></button>
       </div>
-    </div>
+  
+      <!--footer-->
+      <div class="footer">
+        <img src="img/logo-parque.png" alt="logo-parquelalibertad">
+      </div>
+    </div> 
     <!--Nuevo cambio-->
     <!--Se hace cambios en slide-dot en ves de manejarlo con "li" se manejará con "button" ya que
           en terminos de accesibilidad es mejor práctica-->
     <!--Se agregan los dot a objetos en JS para poder manejar la posición donde se genero el evento y asi 
           poder cambiar el color-->
     <!--slide-dot-->
-    <div class="slide-dot clearfix">
-      <button onclick="changeImageByDot(0,this)" class="dot dot-active"></button>
-      <button onclick="changeImageByDot(1,this)" class="dot"></button>
-      <button onclick="changeImageByDot(2,this)" class="dot"></button>
-    </div>
-
-    <!--footer-->
-    <div class="footer">
-      <img src="img/logo-parque.png" alt="logo-parquelalibertad">
-    </div>
   
     <script src="js/script.js"></script>
   </body>
