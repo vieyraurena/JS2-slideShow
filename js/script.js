@@ -1,3 +1,5 @@
+
+
 //Guardamos las imagenes y su información en constantes, tambien agregamos una constate para manejar los dot
 const images = document.querySelectorAll('.image-slide');
 const infos = document.querySelectorAll('.box-slide-content');
@@ -37,14 +39,15 @@ function changeImageByDot(index, obj) {
 function changeImage2(right, index = null) {
     for (let i = 0; i < images.length; i++) {
         images[i].classList.add('js-content-hidden');
-        infos[i].classList.add('js-content-hidden');
+        infos[i].classList.add('js-content-hidden'); 
+        dots[i].classList.remove('dot-active');
     }
     if (index) {
         position = index;
     } else {
         if (right) {
             if (position < 2) {
-                position++;
+                position++;  
             } else {
                 position = 0;
             }
@@ -58,6 +61,7 @@ function changeImage2(right, index = null) {
     }
     images[position].classList.remove('js-content-hidden');
     infos[position].classList.remove('js-content-hidden');
+    dots[position].classList.add('dot-active');
 }
 
 function changeImage() {
@@ -74,7 +78,7 @@ function changeImage() {
     }
     images[position].classList.remove('js-content-hidden');
     infos[position].classList.remove('js-content-hidden');
-    dots[position].classList.add('dot-active')
+    dots[position].classList.add('dot-active');
 }
 
 window.setInterval(changeImage, 5000);
