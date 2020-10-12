@@ -3,8 +3,8 @@
 .clearfix::after {
   content: "";
   clear: both;
-  display: table; }
-
+  display: table; 
+}
 .slide-dot {
   margin-left: 580px;
 }
@@ -17,6 +17,9 @@
   border-radius: 15px;
 
   &:hover {
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(138, 130, 130);
   }
 }
+.dot-active {
+  background-color:  #a55402;
+} 
