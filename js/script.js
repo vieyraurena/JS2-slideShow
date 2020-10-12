@@ -1,4 +1,3 @@
-
 //Guardamos las imagenes y su información en constantes, tambien agregamos una constate para manejar los dot
 const images = document.querySelectorAll('.image-slide');
 const infos = document.querySelectorAll('.box-slide-content');
