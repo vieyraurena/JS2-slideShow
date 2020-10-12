@@ -62,6 +62,16 @@
           </div>
         </div>   
       </div>       
+      <div class="slide-dot clearfix">
+        <button onclick="changeImageByDot(0,this)" class="dot dot-active"></button>
+        <button onclick="changeImageByDot(1,this)" class="dot"></button>
+        <button onclick="changeImageByDot(2,this)" class="dot"></button>
+      </div>
+  
+      <!--footer-->
+      <div class="footer">
+        <img src="img/logo-parque.png" alt="logo-parquelalibertad">
+      </div>
     </div> 
     <!--Nuevo cambio-->
     <!--Se hace cambios en slide-dot en ves de manejarlo con "li" se manejará con "button" ya que
@@ -69,16 +79,6 @@
     <!--Se agregan los dot a objetos en JS para poder manejar la posición donde se genero el evento y asi 
           poder cambiar el color-->
     <!--slide-dot-->
-    <div class="slide-dot clearfix">
-      <button onclick="changeImageByDot(0,this)" class="dot dot-active"></button>
-      <button onclick="changeImageByDot(1,this)" class="dot"></button>
-      <button onclick="changeImageByDot(2,this)" class="dot"></button>
-    </div>
-
-    <!--footer-->
-    <div class="footer">
-      <img src="img/logo-parque.png" alt="logo-parquelalibertad">
-    </div>
   
     <script src="js/script.js"></script>
   </body>
