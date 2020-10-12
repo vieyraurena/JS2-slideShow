@@ -79,7 +79,10 @@ button {
   background-color: #fff;
   border-radius: 15px; }
   button:hover {
-    background-color: #424242; }
+    background-color: #8a8282; }
+
+.dot-active {
+  background-color: #a55402; }
 
 /*arrows*/
 #arrow1 {
@@ -102,6 +105,5 @@ button {
   width: 100px; }
 
 /*clases para utilizar con js*/
-/*.box-slide-hidden{
-  display: none;
-}*/
+.js-content-hidden {
+  display: none; }
